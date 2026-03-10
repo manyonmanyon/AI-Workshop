@@ -1,14 +1,190 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中高年向けAI実践講座</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <div class="container">
+            <h1>AIリテラシー実践セミナー2026</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">ホーム</a></li>
+                    <li><a href="#vision">ビジョン</a></li>
+                    <li><a href="#courses">講座内容</a></li>
+                    <li><a href="#instructor">講師・体制</a></li>
+                    <li><a href="#contact">お申し込み</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h2>学び力が、創る力に変わる</h2>
+                    <p>〜人間の知恵×AIの力で「実践知」を再定義する〜</p>
+                    <p>AIは「置き換え」ではなく「拡張」のためのツールです。中高年層が持つ現場感覚・人間関係・社会的理解と、最新のAI技術を掛け合わせ、社会に価値を生み出す人材を育成します。</p>
+                    <a href="#courses" class="btn">講座の詳細を見る</a>
+                </div>
+                <div class="hero-image">
+                    <img src="aixwisdom.jpg" alt="人間の知恵とAIが協調するイメージイラスト" class="generated-illustration">
+                </div>
+            </div>
+        </section>
+
+        <section id="vision">
+            <div class="container">
+                <h2>共創型人材育成の3本柱</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <span class="material-icons" style="font-size: 3rem; color: var(--primary-color);">psychology</span>
+                        <h3>リテラシー</h3>
+                        <p>AIを「怖がらず」、使い方を知る。生成AI、データ分析、倫理・プライバシーの基礎を習得します。</p>
+                    </div>
+                    <div class="card">
+                        <span class="material-icons" style="font-size: 3rem; color: var(--primary-color);">auto_fix_high</span>
+                        <h3>プラクティス</h3>
+                        <p>AIをビジネスや地域課題に活かす。現場の課題をAIで分析し、解決策をプロトタイピングします。</p>
+                    </div>
+                    <div class="card">
+                        <span class="material-icons" style="font-size: 3rem; color: var(--primary-color);">groups</span>
+                        <h3>コラボレーション</h3>
+                        <p>経験を持つ人が「AI活用の橋渡し役」へ。若手技術者との協働やAI導入のコーディネート力を養います。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses">
+            <div class="container">
+                <h2>選べる2つのコース</h2>
+                <div class="course-split">
+                    <div class="course-level">
+                        <h3>初級者編：AI基礎理解と活用実践</h3>
+                        <p class="target">対象：AIを利用したことがない方、インターネット検索を日常的に使っている方</p>
+                        <ul class="curriculum-list">
+                            <li>AIの基礎知識と倫理（ハルシネーション・著作権等）</li>
+                            <li>生成AIによる文書作成入門（プロンプトの基本）</li>
+                            <li>情報収集と要約の技術（ウェブ検索におけるAI活用）</li>
+                            <li>音声入力と議事録作成（業務効率化の体験）</li>
+                            <li>セキュリティとデータの扱い</li>
+                        </ul>
+                        <p class="price">受講料：55,000円（税込）</p>
+                    </div>
+                    <div class="course-level">
+                        <h3>中級者編：AI開発とビジネス応用</h3>
+                        <p class="target">対象：AIを活用して、定型業務の効率化やクリエイティブな事業提案を行いたい方</p>
+                        <ul class="curriculum-list">
+                            <li>応用プロンプティングとペルソナ設計（RAGの理解）</li>
+                            <li>ビジネス・地域課題のための情報収集・分析</li>
+                            <li>クリエイティブコンテンツの生成と演習（画像生成等）</li>
+                            <li>AI導入計画とリスクマネジメント</li>
+                        </ul>
+                        <p class="price">受講料：88,000円（税込）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instructor">
+            <div class="container">
+                <h2>講師・指導体制</h2>
+                <div class="instructor-card">
+                    <img src="jeong2.jpg" alt="講師の写真">
+                    <div class="instructor-info">
+                        <h3>鄭　萬溶（博士・工学）</h3>
+                        <p class="role">沼津高専電子制御工学科・教授</p>
+                        <p>専門は非線形振動・人工知能。深い知見と、長年DCON（高専ディープラーニングコンテスト）を中心とした「AIによる課題解決とその社会実装」に取り組んでいる。
+                           DCONには、2019年の第0次大会から６回の本選出場を果し、最多出場を誇る。</p>
+                        <p class="support">※演習補助として沼津高専学生（2〜4名）がサポートに入ります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>受講生の声</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <p>「AIは自分には関係ないと思っていましたが、この講座で考えが変わりました。日常がもっと楽しく、便利になるヒントがたくさんありました。」</p>
+                        <p class="student-name">60代・女性</p>
+                    </div>
+                    <div class="card">
+                        <p>「パソコンが苦手な私でも、本当に理解できるか不安でした。しかし、先生が根気強く教えてくださり、今ではAIで趣味の俳句を作るのが日課です。」</p>
+                        <p class="student-name">70代・男性</p>
+                    </div>
+                    <div class="card">
+                        <p>「仕事で若い人たちとの会話についていけるか心配でしたが、AIの知識を得たことで、自信を持ってコミュニケーションが取れるようになりました。」</p>
+                        <p class="student-name">50代・男性</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="container">
+                <h2>よくある質問</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="material-icons">expand_more</span>
+                        <p>パソコン初心者でも大丈夫ですか？</p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、もちろんです。本講座は、パソコンの基本的な操作（文字入力やマウス操作）ができれば、どなたでもご参加いただけます。専門的な知識は一切不要です。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="material-icons">expand_more</span>
+                        <p>講座で使うものは何ですか？</p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>インターネットに接続できるパソコン（WindowsまたはMac）をご用意ください。講座によっては、スマートフォンやタブレットを使用することもあります。</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="material-icons">expand_more</span>
+                        <p>欠席した場合の補講はありますか？</p>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、講座内容はすべて録画しており、後日視聴することが可能ですのでご安心ください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <p>ご質問やご相談など、お気軽にお問い合わせください。</p>
+                <form>
+                    <input type="text" placeholder="お名前" required>
+                    <input type="email" placeholder="メールアドレス" required>
+                    <textarea placeholder="お問い合わせ内容" rows="5" required></textarea>
+                    <button type="submit" class="btn">送信する</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 中高年向けAI実践講座</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,1 +1,449 @@
-/* Add styles here */
+/*====================================
+
+    - Template Name: Play - Free Shiba Inu Coming Soon Template
+    - Author: DoubleEight
+    - Version: 1.0
+    - Website: https://www.dethemes.com
+
+====================================*/
+
+/*====================================
+
+    TABLE OF CONTENT
+
+    1.  -   General Use
+    2.  -   Typography
+    3.  -   Buttons
+    4.  -   Forms
+    5.  -   Header
+    6.  -   Hero
+    7.  -   Services
+    8.  -   Instructor
+    9.  -   Testimonials
+    10. -   FAQ
+    11. -   Contact
+    12. -   Footer
+
+====================================*/
+
+/*====================================
+    1. General Use
+====================================*/
+
+:root {
+    --primary-color: #3d5afe;
+    --secondary-color: #f4f4f4;
+    --dark-color: #212121;
+    --light-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-heading: 'Noto Sans JP', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    /* Subtle noise texture */
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C9C9C' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+}
+
+/*====================================
+    2. Typography
+====================================*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.7rem; }
+
+
+/*====================================
+    3. Buttons
+====================================*/
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(61, 90, 254, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #314bfa;
+    transform: translateY(-3px);
+}
+
+/*====================================
+    4. Forms
+====================================*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+/*====================================
+    5. Header
+====================================*/
+
+header {
+    background: var(--light-color);
+    color: var(--dark-color);
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+header a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+header a:hover, header a.active {
+    border-color: var(--primary-color);
+}
+
+/*====================================
+    6. Hero
+====================================*/
+
+#hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1526649661456-89c7ed4d53b9?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 1rem;
+    color: var(--dark-color);
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+#hero p {
+    margin: 1.5rem 0 2rem 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generated-illustration {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/*====================================
+    7. Services (Courses)
+====================================*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+course-card {
+    display: block;
+}
+
+.course-split {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.course-level {
+    flex: 1;
+    min-width: 300px;
+    background: var(--light-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px -10px var(--shadow-color);
+}
+
+.course-level h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.curriculum-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.curriculum-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.curriculum-list li::before {
+    content: 'check_circle';
+    font-family: 'Material Icons';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.target {
+    font-size: 0.9rem;
+    background: #e8eaf6;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+
+/*====================================
+    8. Instructor
+====================================*/
+
+#instructor .instructor-card {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: var(--light-color);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px -10px var(--shadow-color);
+}
+
+#instructor img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#instructor .role {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/*====================================
+    9. Testimonials
+====================================*/
+
+#testimonials .card {
+    background: var(--light-color);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px -10px var(--shadow-color);
+}
+
+#testimonials .student-name {
+    text-align: right;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+/*====================================
+    10. FAQ
+====================================*/
+#faq .container {
+    max-width: 800px;
+}
+
+.faq-item {
+    background: var(--light-color);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.faq-question {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-question p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust as needed */
+}
+
+.faq-item.active .faq-question .material-icons {
+    transform: rotate(180deg);
+}
+
+.faq-question .material-icons {
+    transition: transform 0.3s ease;
+}
+
+
+/*====================================
+    11. Contact
+====================================*/
+#contact {
+    text-align: center;
+}
+
+
+/*====================================
+    12. Footer
+====================================*/
+
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--dark-color);
+    color: var(--light-color);
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    #hero {
+        padding: 4rem 1rem;
+    }
+
+    #hero h2 {
+        font-size: 2.8rem;
+    }
+    
+    #instructor .instructor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
